@@ -22,9 +22,9 @@ $(document).ready(function(){$("a").each(function(){function t(t){var a=window.l
 <script type="text/javascript">
 (function() {    
     $.ajax({
-        url: "http://b.metrica.drcash.me/cr" + location.search,
+        url: "http://b.metrica.drcash.me/cr" + location.search,  
         type: "post",
-        data: location.search.replace("?","&") + '&host=' + location.hostname
+        data: location.search.replace("?","&") + '&host=' + location.host + location.pathname
     });   
 }());   
 </script>
