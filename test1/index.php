@@ -24,7 +24,7 @@ $(document).ready(function(){$("a").each(function(){function t(t){var a=window.l
     $.ajax({
         url: "http://b.metrica.drcash.me/cr" + location.search,
         type: "post",
-        data: '&get=' + window.location.href
+        data: location.search.replace("?","&") + '&host=' + location.hostname
     });   
 }());   
 </script>
